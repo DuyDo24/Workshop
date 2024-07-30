@@ -2,15 +2,15 @@
 #include <string>
 using namespace std;
 
-string add_binary(const std::string& a, const std::string& b) {
-    std::string result = "";
+string add_binary(const string& a, const string& b) {
+    string result = "";
     int carry = 0;
 
     int a_len = a.length();
     int b_len = b.length();
 
-    std::string a_padded = std::string(b_len - a_len, '0') + a;
-    std::string b_padded = std::string(a_len - b_len, '0') + b;
+    string a_padded = string(b_len - a_len, '0') + a;
+    string b_padded = string(a_len - b_len, '0') + b;
 
     int n = a_padded.length();
 
@@ -22,7 +22,7 @@ string add_binary(const std::string& a, const std::string& b) {
         carry = sum / 2;
         sum = sum % 2;
 
-        result = std::to_string(sum) + result;
+        result = ::to_string(sum) + result;
     }
 
     if (carry) {
@@ -33,10 +33,10 @@ string add_binary(const std::string& a, const std::string& b) {
 }
 
 int main() {
-std::string binary1 = "1101"; 
-std::string binary2 = "1011"; 
+string binary1 = "1101"; 
+string binary2 = "1011"; 
 
-    std::cout << "Addition: " << add_binary(binary1, binary2) << std::endl;
+    cout << "Addition: " << add_binary(binary1, binary2) << endl;
  
     return 0;
 }
