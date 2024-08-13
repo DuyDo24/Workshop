@@ -5,7 +5,7 @@ int *readNumbers() {
     int n;
     for(int i = 0; i<10;i++) {
         std::cin >> n;
-        array[0] = n;
+        array[i] = n;
     }
     return array;
 };

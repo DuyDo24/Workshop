@@ -30,6 +30,7 @@ void hexDigits(int *numbers,int length){
                     break;
                 case 11:
                     std::cout << "B";
+                    break;
                 case 12:
                     std::cout << "C";
                     break;
