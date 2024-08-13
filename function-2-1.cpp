@@ -104,7 +104,7 @@ void hexDigits(int *numbers,int length){
                     std::cout << "Z";
                     break;
                 default:
-                    std::cout << " ";
+                    std::cout << "";
                     break;
             
             }
