@@ -106,7 +106,6 @@ void hexDigits(int *numbers,int length){
                 default:
                     std::cout << "";
                     break;
-            
             }
         }
 
