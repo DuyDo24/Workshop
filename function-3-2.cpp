@@ -29,3 +29,11 @@ bool equalsArray(int *numbers1,int *numbers2,int length) {
     }
     return true;
 }   
+
+int *reverseArray(int *numbers1,int length) {
+    int *reverse = new int[length];
+    for (int i = 0;i < length;i++) {
+        reverse[i] = numbers1[length - i];
+    }
+    return reverse;
+}
