@@ -1,7 +1,6 @@
 #ifndef ORCHESTRA_H
 #define ORCHESTRA_H
-using namespace std;
-
+#include "Musician.h"
 #include <string>
 
 class Orchestra {

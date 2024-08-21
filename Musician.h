@@ -1,7 +1,6 @@
 #ifndef MUSICIAN_H
 #define MUSICIAN_H
 using namespace std;
-
 #include <string>
 
 class Musician {
