@@ -9,6 +9,9 @@ House::House(int numAppliances){
     numAppliances = 0;
     capacity = numAppliances;
     appliances = new Appliance*[capacity];
+    for(int i = 0; i < capacity; i++) {
+        appliances[i] = nullptr;
+    }
 }
 bool House::addAppliance(Appliance* appliance) {
     if (numAppliances < capacity) {
