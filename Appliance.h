@@ -14,8 +14,8 @@ public:
     void turnOn();
     virtual double getPowerConsumption();
     int get_powerRating();
-    void set_powerRating();
+    void set_powerRating(int powerRating);
     bool get_isOn();
-    void set_isOn();
+    void set_isOn(bool isOn);
 };
 #endif

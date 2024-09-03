@@ -14,12 +14,12 @@ double Appliance::getPowerConsumption(){
 int Appliance::get_powerRating(){
     return powerRating;
 }
-void Appliance::set_powerRating(){
+void Appliance::set_powerRating(int powerRating){
     this->powerRating = powerRating;
 }
 bool Appliance::get_isOn(){
     return isOn;
 }
-void Appliance::set_isOn(){
+void Appliance::set_isOn(bool isOn){
     this->isOn = isOn;
 }
