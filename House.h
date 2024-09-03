@@ -6,7 +6,7 @@ class House : public Appliance{
 private:
     Appliance** appliances;
     int numAppliances;
-    int capacity;
+    int currentNumAppliances;
 public:
     House();
     House(int numAppliances);
