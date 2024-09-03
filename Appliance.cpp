@@ -9,7 +9,8 @@ void Appliance::turnOn(){
     isOn = true;
 }
 double Appliance::getPowerConsumption(){
-    return 0;
+    double zero = 0;
+    return zero;
 }
 int Appliance::get_powerRating(){
     return powerRating;
