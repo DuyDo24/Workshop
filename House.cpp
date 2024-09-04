@@ -2,31 +2,26 @@
 
 House::House(){
     numAppliances = 0;
-    capacity = 0;
-    appliances = nullptr;
+    currentNumAppliances = 0;
+    appliances = new Appliance*[numAppliances];
 }
 House::House(int numAppliances){
-    numAppliances = 0;
-    capacity = numAppliances;
-    appliances = new Appliance*[capacity];
-    for(int i = 0; i < capacity; i++) {
-        appliances[i] = nullptr;
-    }
+    this->numAppliances = numAppliances;
+    currentNumAppliances = 0;
+    appliances = new Appliance*[numAppliances];
 }
 bool House::addAppliance(Appliance* appliance) {
-    if (numAppliances < capacity) {
-        appliances[numAppliances++] = appliance;
+    if (currentNumAppliances < numAppliances) {
+        appliances[currentNumAppliances++] = appliance;
         return true;
     }
     return false;
 }
 
-double House::getTotalPowerConsumption() {
-    double totalPower = 0;
-    for (int i = 0; i < numAppliances; ++i) {
-        if (appliances[i] != nullptr) {
-            totalPower += appliances[i]->getPowerConsumption();
-        }
+double House::getTotalPowerConsumption(){
+    double totalPower = 0.0;
+    for (int i = 0; i < currentNumAppliances; i++) {
+        totalPower += appliances[i]->getPowerConsumption();
     }
     return totalPower;
 }
