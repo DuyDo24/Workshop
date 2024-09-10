@@ -8,20 +8,7 @@ private:
     int id;
 
 public:
-    // Default constructor
-    Student();
-
-    // Parameterized constructor
     Student(const std::string& name, int id);
-
-    // Destructor
-    ~Student();
-
-    // Getter for student ID
-    int getId() const;
-
-    // Setter for student ID
-    void setId(int id);
 };
 
-#endif // STUDENT_H
+#endif

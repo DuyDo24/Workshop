@@ -8,20 +8,8 @@ protected:
     std::string name;
 
 public:
-    // Default constructor
-    Person();
-
-    // Parameterized constructor
     Person(const std::string& name);
-
-    // Destructor
-    virtual ~Person();
-
-    // Getter for name
-    std::string getName() const;
-
-    // Setter for name
-    void setName(const std::string& name);
+    virtual ~Person() = default;
 };
 
-#endif // PERSON_H
+#endif
