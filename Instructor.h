@@ -1,10 +1,15 @@
 #ifndef INSTRUCTOR_H
 #define INSTRUCTOR_H
+
 #include "Person.h"
 
-class Instructor : public Person{
+class Instructor : public Person {
 public:
-    Instructor();
-    Instructor(string& name);
+    // Constructor
+    Instructor(const std::string& name);
+
+    // Destructor
+    ~Instructor();
 };
-#endif
+
+#endif // INSTRUCTOR_H

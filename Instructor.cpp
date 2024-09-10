@@ -1,4 +1,11 @@
 #include "Instructor.h"
 
-Instructor::Instructor() : Person() {}
-Instructor::Instructor(string& name) : Person(name) {}
+// Constructor
+Instructor::Instructor(const std::string& name)
+    : Person(name) {  // Call the base class (Person) constructor
+}
+
+// Destructor
+Instructor::~Instructor() {
+    // Destructor body (if needed)
+}
