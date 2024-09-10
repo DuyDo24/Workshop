@@ -4,21 +4,34 @@
 #include <string>
 #include <vector>
 #include "Course.h"
-using namespace std;
 
 class University {
 private:
-    string name;
-    string location;
-    vector<Course> courses;
+    std::string name;
+    std::string location;
+    std::vector<Course> courses;
 
 public:
+    // Default constructor
     University();
-    University(string& name, string& location);
+
+    // Parameterized constructor
+    University(const std::string& name, const std::string& location);
+
+    // Destructor
     ~University();
-    void addCourse(int id, string& name);
-    string getName();
-    string getLocation();
-    vector<Course> getCourses();
+
+    // Method to add a course
+    void addCourse(int id, const std::string& name);
+
+    // Getter for university name
+    std::string getName() const;
+
+    // Getter for university location
+    std::string getLocation() const;
+
+    // Getter for the list of courses
+    std::vector<Course> getCourses() const;
 };
-#endif 
+
+#endif // UNIVERSITY_H

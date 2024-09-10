@@ -1,14 +1,27 @@
 #ifndef STUDENT_H
 #define STUDENT_H
+
 #include "Person.h"
 
-class Student : public Person{
-protected:
+class Student : public Person {
+private:
     int id;
+
 public:
+    // Default constructor
     Student();
-    Student(string& name, int id);
-    int getId();
+
+    // Parameterized constructor
+    Student(const std::string& name, int id);
+
+    // Destructor
+    ~Student();
+
+    // Getter for student ID
+    int getId() const;
+
+    // Setter for student ID
     void setId(int id);
 };
-#endif
+
+#endif // STUDENT_H

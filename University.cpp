@@ -1,24 +1,32 @@
 #include "University.h"
 
-
+// Default constructor
 University::University() : name("Unknown"), location("Unknown") {}
-University::University(string& name, string& location): name(name), location(location) {}
+
+// Parameterized constructor
+University::University(const std::string& name, const std::string& location)
+    : name(name), location(location) {}
+
+// Destructor
 University::~University() {}
 
-
-void University::addCourse(int id, string& courseName) {
+// Method to add a course to the university
+void University::addCourse(int id, const std::string& courseName) {
     Course newCourse(courseName, id);
     courses.push_back(newCourse);
 }
 
-string University::getName(){
+// Getter for university name
+std::string University::getName() const {
     return name;
 }
 
-std::string University::getLocation(){
+// Getter for university location
+std::string University::getLocation() const {
     return location;
 }
 
-std::vector<Course> University::getCourses() {
+// Getter for the list of courses
+std::vector<Course> University::getCourses() const {
     return courses;
 }

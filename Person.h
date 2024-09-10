@@ -1,15 +1,27 @@
 #ifndef PERSON_H
 #define PERSON_H
-#include <string>
-using namespace std;
 
-class Person{
+#include <string>
+
+class Person {
 protected:
-    string name;
+    std::string name;
+
 public:
+    // Default constructor
     Person();
-    Person(string& name);
-    string getName();
-    void setName(string& name);
+
+    // Parameterized constructor
+    Person(const std::string& name);
+
+    // Destructor
+    virtual ~Person();
+
+    // Getter for name
+    std::string getName() const;
+
+    // Setter for name
+    void setName(const std::string& name);
 };
-#endif
+
+#endif // PERSON_H
