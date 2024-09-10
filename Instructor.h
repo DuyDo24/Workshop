@@ -2,6 +2,9 @@
 #define INSTRUCTOR_H
 #include "Person.h"
 
-class INSTRUCTOR : public Person{
+class Instructor : public Person{
+public:
+    Instructor();
+    Instructor(string& name);
 };
 #endif
