@@ -1,10 +1,7 @@
 #include <iostream>
-#include <tuple>
-#include <cstdlib>
 #include <ctime>
 #include "GameEntity.h"
 #include "Utils.h"
-#include "Effect.h"
 
 int main() {
     srand(static_cast<unsigned>(time(0))); // Seed for random number generation

@@ -1,10 +1,6 @@
 #ifndef EFFECT_H
 #define EFFECT_H
 #include "GameEntity.h"
-#include <iostream>
-#include <tuple>
-#include <cstdlib>
-#include <ctime>
 
 class Effect{
 public:

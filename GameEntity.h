@@ -1,9 +1,6 @@
 #ifndef GAMEENTITY_H
 #define GAMEENTITY_H
-#include <iostream>
 #include <tuple>
-#include <cstdlib>
-#include <ctime>
 
 enum GameEntityType{
         ExplosionType, 
