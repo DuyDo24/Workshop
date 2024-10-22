@@ -1,6 +1,5 @@
 #ifndef UTILS_H
 #define UTILS_H
-#include <iostream>
 #include <tuple>
 #include <cstdlib>
 #include <ctime>
