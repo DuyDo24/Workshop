@@ -2,22 +2,16 @@
 #define GAMEENTITY_H
 #include <tuple>
 
-enum GameEntityType{
-        ExplosionType, 
-        MineType, 
-        NoneType, 
-        ShipType
-    };
+enum GameEntityType{ExplosionType, MineType, NoneType, ShipType};
 
 class GameEntity{
 public:
     std::tuple<int, int> position;
     GameEntityType type;
 
-    ~GameEntity(){}
-    GameEntity(int x, int y, GameEntityType entityType){
-        position = std::make_tuple(x, y);
-        type = entityType;
+    GameEntity(int x, int y, GameEntityType typeEntity){  
+        position = std::make_tuple(x,y);
+        type = typeEntity;
     }
     std::tuple<int, int> getPos(){
         return position;
@@ -26,5 +20,4 @@ public:
         return type;
     }
 };
-
 #endif

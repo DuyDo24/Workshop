@@ -4,8 +4,6 @@
 
 class Effect{
 public:
-    virtual void apply(GameEntity& entity) = 0;
-    Effect();
-    ~Effect();
+    virtual void apply(GameEntity& entity);
 };
 #endif
