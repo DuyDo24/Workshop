@@ -6,15 +6,11 @@ class Ship : public GameEntity{
 public:
     Ship();
     ~Ship();
-    GameEntity move(int dx, int dy){
+    void move(int dx, int dy){
         int x = std::get<0>(position) + dx;
-        int y = std::get<1>(position) + dy;
+        int y = std::get<0>(position) + dy;
         position = std::make_tuple(x,y);
     }
-    Ship(int x, int y){
-        position = std::make_tuple(x,y);
-        type = GameEntityType::ShipType;
-    }
+    Ship(int x, int y) : GameEntity(x,y,ShipType){};
 };
-
 #endif
