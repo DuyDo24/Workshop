@@ -10,8 +10,8 @@ public:
    
    Explosion(int x, int y) : GameEntity(x,y,ExplosionType){};
    void apply(GameEntity& entity){
-        type = NoneType;
-        position = std::make_tuple(-1,-1);
+        entity.type = NoneType;
+        entity.position = std::make_tuple(-1,-1);
    }
 };
 #endif
