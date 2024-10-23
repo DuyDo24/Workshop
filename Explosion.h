@@ -5,11 +5,11 @@
 
 class Explosion : public GameEntity, public Effect{
 public:
-    Explosion();
-   ~Explosion();
+    Explosion(){};
+   ~Explosion(){};
    
    Explosion(int x, int y) : GameEntity(x,y,ExplosionType){};
-   void apply(GameEntity& entity)override{
+   void apply(GameEntity& entity){
         type = NoneType;
         position = std::make_tuple(-1,-1);
    }

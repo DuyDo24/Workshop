@@ -4,8 +4,8 @@
 
 class Ship : public GameEntity{
 public:
-    Ship();
-    ~Ship();
+    Ship(){};
+    ~Ship(){};
     void move(int dx, int dy){
         int x = std::get<0>(position) + dx;
         int y = std::get<0>(position) + dy;

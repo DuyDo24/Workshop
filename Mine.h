@@ -5,8 +5,8 @@
 
 class Mine : public GameEntity{
 public:
-    Mine();
-    ~Mine();
+    Mine(){};
+    ~Mine(){};
     Explosion explode(){ 
         type = NoneType;
         return Explosion(std::get<0>(position),std::get<1>(position));
