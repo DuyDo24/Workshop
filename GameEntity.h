@@ -9,6 +9,7 @@ public:
     std::tuple<int, int> position;
     GameEntityType type;
 
+    GameEntity();
     GameEntity(int x, int y, GameEntityType typeEntity){  
         position = std::make_tuple(x,y);
         type = typeEntity;
@@ -19,5 +20,6 @@ public:
     GameEntityType getType(){
         return type;
     }
+    ~GameEntity();
 };
 #endif
