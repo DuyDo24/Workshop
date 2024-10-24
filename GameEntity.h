@@ -20,6 +20,6 @@ public:
     GameEntityType getType(){
         return type;
     }
-    ~GameEntity(){};
+    virtual ~GameEntity(){};
 };
 #endif
